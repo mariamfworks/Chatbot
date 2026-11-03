@@ -10,20 +10,19 @@ This file chronologically documents the observations, challenges faced, learning
 **Date:** 3/11/2026
 
 **Concept:**
-...
+Regular expression matching using Java's `Pattern` and `Matcher` classes.
 
 **Challenge:**
-...
+The chatbot returned unexpected responses because `matcher.find()` matched patterns within the input rather than checking the entire input and separating words.
 
-**Investigation:**
-...
+<!-- **Investigation:**
+Investigated the difference between `Matcher.find()` and `Matcher.matches()` and understood how each handles regex pattern matching. -->
 
 **Solution:**
-...
+Replaced `matcher.find()` with `matcher.matches()` to ensure the entire user input matches a predefined regex pattern.
 
 **Learning:**
-...
-
+matcher.matches() checks whether the regex pattern matches the entire user input, unlike matcher.find(), which searches for matching substrings within the input.
 ---
 <!-- //this is the template
 ### Entry 2 – Initial Implementation (Java)
