@@ -22,7 +22,8 @@ Investigated the difference between `Matcher.find()` and `Matcher.matches()` and
 Replaced `matcher.find()` with `matcher.matches()` to ensure the entire user input matches a predefined regex pattern.
 
 **Learning:**
-matcher.matches() checks whether the regex pattern matches the entire user input, unlike matcher.find(), which searches for matching substrings within the input.
+matcher.matches() checks whether the regex pattern matches the entire user input, unlike matcher.find(), which searchers for matching substrings within the input.
+
 ---
 <!-- //this is the template
 ### Entry 2 – Initial Implementation (Java)
